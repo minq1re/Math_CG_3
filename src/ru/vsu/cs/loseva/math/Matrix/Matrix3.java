@@ -41,17 +41,17 @@ public class Matrix3 {
     }
 
         // Транспонирование
-        public Matrix3 transpose() {
-            return new Matrix3(MatrixUtils.transpose(this.values));
-        }
+    public Matrix3 transpose() {
+        return new Matrix3(MatrixUtils.transpose(this.values));
+    }
 
         // Задание единичной матрицы
-        public static Matrix3 identity() {
+    public static Matrix3 identity() {
             return new Matrix3(MatrixUtils.identity(size));
         }
 
         // Задание нулевой матрицы
-        public static Matrix3 zero() {
+   public static Matrix3 zero() {
             return new Matrix3(MatrixUtils.zero(size));
         }
 }
